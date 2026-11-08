@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morrison's Wildlife, LLC helps Alabama homeowners address bat and squirrel entry with humane one-way exclusion and damage documentation.">
+    <title>Morrison's Wildlife, LLC | Humane Wildlife Removal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        earth: {
+                            forest: '#17241f',
+                            moss: '#53624e',
+                            clay: '#a55d3b',
+                            bark: '#2b3028',
+                            sand: '#f2f0e7',
+                            card: '#e5e8de'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        h1, h2, h3, h4 { font-family: Georgia, Cambria, "Times New Roman", serif; }
+        .statewide-map-link { background: #fbfaf5; border: 1px solid #c9cdbf; color: #17241f; min-height: 300px; }
+        .alabama-map-shape { width: 130px; height: 205px; background: linear-gradient(160deg, #53624e, #a55d3b); -webkit-mask: url("assets/alabama-state-silhouette.svg") center / contain no-repeat; mask: url("assets/alabama-state-silhouette.svg") center / contain no-repeat; transition: transform .2s ease, background .2s ease; }
+        .statewide-map-link:hover .alabama-map-shape,
+        .statewide-map-link:focus-visible .alabama-map-shape { background: #b7683f; transform: translateY(-4px) scale(1.03); }
+        .statewide-map-link:focus-visible { outline: 3px solid #17241f; outline-offset: 4px; }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; }
+            .alabama-map-shape { transition: none; }
+        }
+    </style>
+</head>
+<body class="bg-earth-sand text-earth-bark font-sans antialiased min-h-screen flex flex-col selection:bg-earth-moss selection:text-white">
+    <header class="bg-[#101a15]/95 backdrop-blur-md border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center" aria-label="Morrison's Wildlife home">
+                <img src="assets/blue-squirrel-wildlife-logo.png" alt="Morrison's Wildlife logo, featuring a blue squirrel and company name" class="w-24 sm:w-32 lg:w-36 h-auto" fetchpriority="high">
+            </a>
+            <nav class="hidden md:flex items-center gap-7 font-bold text-sm text-slate-200" aria-label="Main navigation">
+                <a href="animals.html" class="hover:text-sky-200">Wildlife Guide</a>
+                <a href="services.html" class="hover:text-sky-200">Services</a>
+                <a href="#process" class="hover:text-sky-200">Our Approach</a>
+                <a href="#prevention" class="hover:text-sky-200">Prevention</a>
+                <a href="#service-areas" class="hover:text-sky-200">Service Areas</a>
+            </nav>
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="contact.html" class="whitespace-nowrap bg-earth-clay hover:bg-earth-moss text-white text-xs sm:text-sm font-bold px-3 sm:px-5 py-2.5 rounded-lg transition shadow-md">Contact Us</a>
+                <button id="menu-btn" type="button" class="md:hidden text-white p-2 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-sky-300" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-[#101a15] border-t border-slate-700 px-5 py-4 space-y-1 font-bold text-slate-100" aria-label="Mobile navigation">
+            <a href="animals.html" class="block py-2 hover:text-sky-200">Wildlife Guide</a>
+            <a href="services.html" class="block py-2 hover:text-sky-200">Services</a>
+            <a href="#process" class="block py-2 hover:text-sky-200">Our Approach</a>
+            <a href="#prevention" class="block py-2 hover:text-sky-200">Prevention</a>
+            <a href="#service-areas" class="block py-2 hover:text-sky-200">Service Areas</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative isolate bg-earth-forest text-white py-14 sm:py-16 lg:py-24 px-4 sm:px-6 overflow-hidden border-b-4 border-earth-moss">
+            <!-- Free Pexels clip by Taryn Elliott, used under the Pexels License: https://www.pexels.com/video/squirrel-in-a-tree-branch-7519316/ -->
+            <video class="hero-wildlife absolute inset-0 -z-20 h-full w-full object-cover object-center" poster="https://images.unsplash.com/photo-1683199215785-757f90e5f87a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+                <source src="assets/squirrel-tree-branch.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 -z-10 bg-gradient-to-r from-black/80 via-earth-forest/75 to-earth-forest/45" aria-hidden="true"></div>
+            <div class="absolute inset-0 -z-10 bg-earth-forest/20" aria-hidden="true"></div>
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-9 sm:gap-12 items-center relative z-10">
+                <div class="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center justify-center gap-2 bg-earth-moss/80 border border-white/30 text-sky-100 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold tracking-wide">Humane bat &amp; squirrel services</div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">Wildlife belongs outdoors. <span class="text-sky-200">We help it get there safely.</span></h1>
+                    <p class="text-base sm:text-lg text-white/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed">When bats or squirrels get into your home, a careful plan can protect your family, your property, and the animals. One-way exclusion lets them leave while preventing re-entry, followed by sealing and damage cleanup.</p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4 pt-2 max-w-md mx-auto lg:mx-0">
+                        <a href="contact.html" class="w-full sm:w-auto bg-earth-clay hover:bg-earth-moss text-white font-extrabold px-7 sm:px-8 py-3.5 sm:py-4 rounded-lg text-center shadow-lg transition">Request Help</a>
+                        <a href="#process" class="w-full sm:w-auto bg-earth-moss/90 hover:bg-stone-700 text-white border border-white/40 font-bold px-6 sm:px-7 py-3.5 sm:py-4 rounded-lg text-center transition">See How It Works</a>
+                    </div>
+                    <p class="text-sm text-white/90">Have a question? <a class="text-sky-200 underline underline-offset-2" href="contact.html">Contact us</a> and tell us what you’re seeing.</p>
+                </div>
+                <aside class="lg:col-span-5 bg-earth-sand text-earth-bark p-5 sm:p-8 rounded-2xl border-2 border-earth-moss shadow-2xl" aria-label="Service overview">
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <figure class="relative aspect-[4/3] overflow-hidden rounded-xl bg-earth-moss">
+                            <img src="assets/squirrel-tree-unsplash.jpg" alt="A gray squirrel climbing a tree trunk" class="h-full w-full object-cover" loading="lazy">
+                            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent pt-7 pb-2 text-center text-sm font-bold text-white">Squirrels <span class="block text-[10px] font-medium">Photo: Rafael Garcin / Unsplash</span></figcaption>
+                        </figure>
+                        <figure class="relative aspect-[4/3] overflow-hidden rounded-xl bg-earth-moss">
+                            <img src="assets/bats-flying-usfws.jpg" alt="A large group of bats flying at dusk" class="h-full w-full object-cover" loading="lazy">
+                            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent pt-7 pb-2 text-center text-sm font-bold text-white">Bats <span class="block text-[10px] font-medium">Photo: Ann Froschauer / USFWS</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="text-xs font-black text-earth-clay uppercase tracking-widest mb-1">A thoughtful solution</div>
+                    <h2 class="text-2xl font-black text-earth-forest mb-5">Getting them out is only part of the answer.</h2>
+                    <ul class="space-y-4 text-sm text-stone-700">
+                        <li class="flex items-start gap-3"><span class="text-earth-clay font-black tracking-wide" aria-hidden="true">01</span><span><strong>Understand the issue:</strong> Identify the animal activity and how it is getting inside.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-earth-clay font-black tracking-wide" aria-hidden="true">02</span><span><strong>Use one-way exclusion:</strong> Let bats or squirrels leave without being able to return.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-earth-clay font-black tracking-wide" aria-hidden="true">03</span><span><strong>Seal and document:</strong> Close access points and photograph the damage and completed work.</span></li>
+                    </ul>
+                    <a href="contact.html" class="mt-6 block w-full text-center bg-earth-forest hover:bg-earth-moss text-white font-extrabold py-3.5 rounded-lg transition">Talk Through Your Situation <span aria-hidden="true">→</span></a>
+                </aside>
+            </div>
+        </section>
+
+        <section id="animals" class="py-20 px-4 max-w-7xl mx-auto scroll-mt-24">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-black text-earth-clay uppercase tracking-widest">Wildlife guide</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-earth-forest mt-1 mb-3">Bats &amp; squirrels</h2>
+                    <p class="text-stone-700 font-medium">Morrison’s Wildlife focuses on humane bat and squirrel exclusion. It does not provide trapping or pest control for other animals.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-7">
+                <article class="bg-white p-7 sm:p-8 rounded-2xl border border-stone-300 shadow-sm">
+                    <figure class="relative h-48 mb-5 rounded-xl overflow-hidden bg-earth-forest"><img src="assets/little-brown-bats-usfws.jpg" alt="A group of little brown bats roosting together" class="w-full h-full object-cover" loading="lazy"><figcaption class="absolute bottom-0 inset-x-0 bg-black/70 px-3 py-1.5 text-xs text-white">Little brown bats · USFWS / Ann Froschauer</figcaption></figure>
+                    <h3 class="text-2xl font-black text-earth-forest mb-3">Bats in a building</h3>
+                    <p class="text-stone-700 leading-relaxed mb-5">Bats may roost in attics, roof spaces, or wall voids, entering through small gaps near rooflines and vents. Droppings, staining, or repeated dusk activity near one opening can be signs of a roost.</p>
+                    <div class="border-t border-stone-200 pt-5">
+                        <h4 class="font-bold text-earth-forest mb-2">Why address it?</h4>
+                        <p class="text-sm text-stone-600 leading-relaxed">A long-standing roost can leave droppings, odor, and staining behind. Alabama Extension advises bat exclusion only outside the pupping season (April through August), when young can safely leave with the adults. Never seal an active entry point before the animals are out.</p>
+                    </div>
+                    <a href="animals.html#bats" class="inline-flex mt-5 text-earth-clay font-bold underline underline-offset-4">Explore the bat guide <span class="ml-1" aria-hidden="true">→</span></a>
+                </article>
+                <article class="bg-white p-7 sm:p-8 rounded-2xl border border-stone-300 shadow-sm">
+                    <figure class="relative h-48 mb-5 rounded-xl overflow-hidden bg-earth-forest"><img src="assets/squirrel-tree-unsplash.jpg" alt="A gray squirrel climbing a tree trunk" class="w-full h-full object-cover object-center" loading="lazy"><figcaption class="absolute bottom-0 inset-x-0 bg-black/70 px-3 py-1.5 text-xs text-white">Gray squirrel · Rafael Garcin / Unsplash</figcaption></figure>
+                    <h3 class="text-2xl font-black text-earth-forest mb-3">Squirrels in an attic</h3>
+                    <p class="text-stone-700 leading-relaxed mb-5">Scratching or scurrying sounds, nesting material, and activity around the roof may point to squirrels. They can use overhanging branches and small openings around soffits, fascia, or vents to get inside.</p>
+                    <div class="border-t border-stone-200 pt-5">
+                        <h4 class="font-bold text-earth-forest mb-2">Why address it?</h4>
+                        <p class="text-sm text-stone-600 leading-relaxed">Chewing and nesting can damage wood, insulation, and wiring. Bird seed, pet food, accessible garbage, and dense branches close to the roof can make a property more inviting. One-way exclusion lets squirrels leave before the opening is sealed.</p>
+                    </div>
+                    <a href="animals.html#squirrels" class="inline-flex mt-5 text-earth-clay font-bold underline underline-offset-4">Explore the squirrel guide <span class="ml-1" aria-hidden="true">→</span></a>
+                </article>
+            </div>
+            <div class="text-center mt-8"><a href="animals.html" class="inline-flex bg-earth-forest hover:bg-earth-moss text-white font-bold px-6 py-3 rounded-lg transition">Visit the wildlife guide <span class="ml-2" aria-hidden="true">→</span></a></div>
+        </section>
+
+        <section id="process" class="bg-stone-200/60 py-20 px-4 border-y border-stone-300 scroll-mt-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-black text-earth-clay uppercase tracking-widest">Clear next steps</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-earth-forest mt-1 mb-3">A careful approach, from inspection to prevention</h2>
+                    <p class="text-stone-700 font-medium">Every property is different. The plan should fit the animal, the building, and the situation, with photos that make hard-to-see work easier to understand.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <article class="bg-earth-sand p-7 rounded-xl border border-stone-300"><span class="text-earth-clay text-sm font-black">STEP 01</span><h3 class="text-xl font-bold text-earth-forest mt-2 mb-3">Inspect &amp; identify</h3><p class="text-sm text-stone-600 leading-relaxed">Look for signs of activity, likely entry points, and any conditions that may be attracting wildlife.</p></article>
+                    <article class="bg-earth-sand p-7 rounded-xl border border-stone-300"><span class="text-earth-clay text-sm font-black">STEP 02</span><h3 class="text-xl font-bold text-earth-forest mt-2 mb-3">Plan one-way exclusion</h3><p class="text-sm text-stone-600 leading-relaxed">A one-way door allows bats or squirrels to leave but blocks their return. Bat work must be scheduled outside the pupping season so young are not left behind.</p></article>
+                    <article class="bg-earth-sand p-7 rounded-xl border border-stone-300"><span class="text-earth-clay text-sm font-black">STEP 03</span><h3 class="text-xl font-bold text-earth-forest mt-2 mb-3">Seal, clean &amp; show the work</h3><p class="text-sm text-stone-600 leading-relaxed">Once animals are out, seal the access points and address damage. Photos of the problem and completed work help you see areas that may be difficult to reach.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-earth-card py-16 px-4 border-y border-stone-300">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <span class="text-xs font-black text-earth-clay uppercase tracking-widest">A clear view of the work</span>
+                    <h2 class="text-3xl font-black text-earth-forest mt-2 mb-4">See what’s happening, even in the attic.</h2>
+                    <p class="text-stone-700 leading-relaxed">Rooflines and attic spaces are hard to inspect yourself. Photos taken during the job can show the entry point, any animal-related damage, and the finished exclusion and repairs.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4" aria-label="Examples of job documentation">
+                    <div class="min-h-36 rounded-xl border border-stone-300 border-t-4 border-t-earth-clay bg-white p-5 flex flex-col justify-center text-center"><span class="text-sm text-earth-clay font-black tracking-widest mb-2">01 / BEFORE</span><strong class="text-earth-forest">Entry points &amp; damage</strong><span class="text-sm text-stone-600">Documented during inspection</span></div>
+                    <div class="min-h-36 rounded-xl border border-stone-300 border-t-4 border-t-earth-moss bg-white p-5 flex flex-col justify-center text-center"><span class="text-sm text-earth-moss font-black tracking-widest mb-2">02 / AFTER</span><strong class="text-earth-forest">Exclusion &amp; completed work</strong><span class="text-sm text-stone-600">Documented when the job is done</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prevention" class="py-20 px-4 max-w-7xl mx-auto scroll-mt-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-black text-earth-clay uppercase tracking-widest">Protect your home</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-earth-forest mt-1 mb-4">Close the door on repeat visits</h2>
+                    <p class="text-stone-700 leading-relaxed mb-6">Prevention starts with finding how wildlife got in. Once the situation is assessed, repairs and practical changes can make your home less accessible and less appealing.</p>
+                    <a href="contact.html" class="inline-flex bg-earth-forest hover:bg-earth-moss text-white font-bold px-6 py-3 rounded-lg transition">Ask about prevention</a>
+                </div>
+                <div class="bg-white p-7 sm:p-8 rounded-2xl border border-stone-300 shadow-sm">
+                    <h3 class="text-xl font-black text-earth-forest mb-5">Common places to check</h3>
+                    <ul class="grid sm:grid-cols-2 gap-4 text-sm text-stone-700">
+                        <li class="flex gap-3"><span class="text-earth-moss">✓</span>Roof edges, soffits, and fascia</li>
+                        <li class="flex gap-3"><span class="text-earth-moss">✓</span>Vents, eaves, and loose screens</li>
+                        <li class="flex gap-3"><span class="text-earth-moss">✓</span>Gaps around pipes and utility lines</li>
+                        <li class="flex gap-3"><span class="text-earth-moss">✓</span>Branches touching or overhanging the roof</li>
+                        <li class="flex gap-3"><span class="text-earth-moss">✓</span>Bird seed, pet food, and open garbage</li>
+                        <li class="flex gap-3"><span class="text-earth-moss">✓</span>Attic insulation and signs of nesting</li>
+                    </ul>
+                    <p class="text-xs text-stone-500 mt-5">The right repair depends on the animal and the opening. Confirm that animals are out before sealing an entry point.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="service-areas" class="bg-[#e5edf0] py-16 sm:py-20 px-4 scroll-mt-24 border-y border-stone-300">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-white text-earth-clay px-4 py-2 rounded-full text-sm font-black shadow-sm">ALABAMA SERVICE AREA</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-earth-forest mt-4 mb-4">Statewide service across Alabama</h2>
+                    <p class="text-stone-700 max-w-xl leading-relaxed">Morrison’s Wildlife provides bat and squirrel exclusion throughout Alabama. Tell us your town or county so we can discuss the property and scheduling.</p>
+                    <a href="contact.html" class="inline-flex mt-6 bg-earth-clay hover:bg-earth-moss text-white font-bold px-7 py-3.5 rounded-lg transition shadow">Reach out for scheduling</a>
+                </div>
+                <!-- Alabama outline: Plotcaster silhouette based on the public-domain U.S. Census Bureau state boundary. -->
+                <a href="contact.html" class="statewide-map-link group rounded-3xl p-6 sm:p-8 flex flex-col items-center justify-center text-center shadow-sm transition" aria-label="Ask about bat and squirrel exclusion throughout Alabama">
+                    <span class="text-xs text-earth-clay font-black tracking-[0.2em] uppercase">Statewide service</span>
+                    <div class="alabama-map-shape my-3" role="img" aria-label="Silhouette map of Alabama"></div>
+                    <span class="text-2xl font-black text-earth-forest">Alabama</span>
+                    <span class="text-sm text-stone-700 mt-1">Bat &amp; squirrel exclusion across the state</span>
+
+                </a>
+            </div>
+        </section>
+
+        <section class="py-16 px-4">
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl border border-stone-300 shadow-sm p-8 sm:p-10 text-center">
+                <span class="text-xs text-earth-clay font-black uppercase tracking-[0.25em]">Humane wildlife exclusion</span>
+                <h2 class="text-3xl font-black text-earth-forest mt-3 mb-3">Let’s figure out what’s happening.</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto mb-6">Describe the sounds, signs, or area of your home where you’ve noticed activity. We’ll help you understand the next step.</p>
+                <a href="contact.html" class="inline-flex bg-earth-clay hover:bg-earth-moss text-white font-extrabold px-8 py-4 rounded-lg transition">Contact the wildlife team</a>
+            </div>
+        </section>
+    </main>
+
+        <footer class="bg-[#101a15] text-stone-300 py-10 border-t border-earth-moss">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between gap-8">
+            <div>
+                <img src="assets/blue-squirrel-wildlife-logo.png" alt="Morrison's Wildlife logo, featuring a blue squirrel and company name" class="w-28 h-auto mb-4" loading="lazy">
+                <p class="text-sm text-stone-400 leading-relaxed max-w-md mt-3">Humane one-way bat and squirrel exclusion, home sealing, and damage documentation. Contact us to discuss your property.</p>
+            </div>
+            <div class="sm:text-right">
+                <h2 class="text-white font-bold mb-2">Get in touch</h2>
+                <a href="contact.html" class="text-sky-200 hover:underline">Contact page</a>
+                <p class="text-sm mt-2"><a class="text-sky-200 hover:underline" href="tel:+12053594716">Call 205-359-4716</a></p>
+                <p class="text-xs text-stone-500 mt-4">Google review link and company details will be added here.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-stone-500 border-t border-earth-moss/80 mt-8 pt-6">Morrison's Wildlife, LLC</div>
+    </footer>
+    <script>
+        const heroVideo = document.querySelector('.hero-wildlife');
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        function syncHeroMotion() {
+            if (reducedMotion.matches) {
+                heroVideo.pause();
+            } else {
+                heroVideo.play().catch(() => {});
+            }
+        }
+
+        syncHeroMotion();
+        reducedMotion.addEventListener('change', syncHeroMotion);
+
+        const menuButton = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isExpanded));
+            menuButton.setAttribute('aria-label', isExpanded ? 'Open navigation menu' : 'Close navigation menu');
+            mobileMenu.classList.toggle('hidden', isExpanded);
+        });
+
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Open navigation menu');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Morrison's Wildlife's humane bat and squirrel exclusion services across Alabama.">
+    <title>Services | Morrison's Wildlife, LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { earth: { forest: '#17241f', moss: '#53624e', clay: '#a55d3b', bark: '#2b3028', sand: '#f2f0e7', card: '#e5e8de' } } } };</script>
+    <style>
+        h1, h2, h3, h4 { font-family: Georgia, Cambria, "Times New Roman", serif; }
+        .page-hero { background: linear-gradient(100deg, rgba(13, 27, 22, .96), rgba(13, 27, 22, .76)), url("assets/squirrel-tree-unsplash.jpg") center 42% / cover; color: #fff; }
+        .page-hero h1 { color: #fff; }
+        .page-hero p { color: #f2f3ec; }
+        .hero-button { background-color: #b7683f; color: #fff; }
+        .hero-button:hover { background-color: #8d4c31; }
+        .service-number { color: #7f3e23; font-size: .75rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    </style>
+</head>
+<body class="bg-earth-sand text-earth-bark font-sans antialiased min-h-screen flex flex-col">
+    <header class="bg-[#101a15] border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+            <a href="index.html" aria-label="Morrison's Wildlife home"><img src="assets/blue-squirrel-wildlife-logo.png" alt="Morrison's Wildlife logo" class="w-20 sm:w-32 h-auto"></a>
+            <nav class="flex items-center gap-2 sm:gap-6 text-white text-xs sm:text-base font-bold" aria-label="Main navigation"><a href="index.html" class="hover:text-sky-200">Home</a><a href="animals.html" class="hover:text-sky-200">Wildlife Guide</a><a href="index.html#service-areas" class="hover:text-sky-200">Service Area</a><a href="contact.html" class="bg-earth-clay px-3 sm:px-4 py-2 rounded-lg hover:bg-earth-moss">Contact</a></nav>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <section class="page-hero px-4 py-16 sm:py-20">
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="inline-flex bg-[#263b32] text-white rounded-full px-4 py-2 text-sm font-bold tracking-wide">BAT &amp; SQUIRREL EXCLUSION</span>
+                <h1 class="text-4xl sm:text-5xl font-black mt-5">A way out, then a way to stay out.</h1>
+                <p class="max-w-3xl mx-auto text-stone-300 text-lg mt-5 leading-relaxed">Morrison’s Wildlife helps with bat and squirrel activity in homes through careful inspection, one-way exclusion, and attention to the openings and damage left behind.</p>
+                <a href="contact.html" class="hero-button inline-flex mt-7 font-extrabold px-7 py-3.5 rounded-lg transition">Talk about your home</a>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 py-16 sm:py-20">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-black text-earth-clay uppercase tracking-widest">What we help with</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-earth-forest mt-2">Humane exclusion, step by step</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="bg-white border border-stone-300 rounded-2xl p-7 shadow-sm"><span class="service-number">01 / INSPECTION</span><h3 class="text-2xl font-black text-earth-forest mt-4 mb-3">Inspection &amp; documentation</h3><p class="text-stone-700 leading-relaxed">Look for signs of bat or squirrel activity, entry points, and visible damage. Photos can help show roofline and attic areas that are difficult for a homeowner to access.</p></article>
+                <article class="bg-white border border-stone-300 rounded-2xl p-7 shadow-sm"><span class="service-number">02 / EXIT</span><h3 class="text-2xl font-black text-earth-forest mt-4 mb-3">One-way exclusion</h3><p class="text-stone-700 leading-relaxed">A one-way device lets animals leave the structure while preventing them from getting back in. The right schedule and approach depend on the animal and conditions at the property.</p></article>
+                <article class="bg-white border border-stone-300 rounded-2xl p-7 shadow-sm"><span class="service-number">03 / SEAL</span><h3 class="text-2xl font-black text-earth-forest mt-4 mb-3">Seal &amp; address damage</h3><p class="text-stone-700 leading-relaxed">After animals have left, entry points can be sealed to reduce the chance of re-entry. The affected areas and completed work are documented so you can see what was addressed.</p></article>
+                <article class="bg-white border border-stone-300 rounded-2xl p-7 shadow-sm"><span class="service-number">04 / PREVENT</span><h3 class="text-2xl font-black text-earth-forest mt-4 mb-3">Practical prevention</h3><p class="text-stone-700 leading-relaxed">Get straightforward guidance on common access points and conditions around the home that may invite repeat activity.</p></article>
+            </div>
+        </section>
+
+        <section class="bg-earth-card border-y border-stone-300 px-4 py-16">
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                <div><span class="text-xs font-black text-earth-clay uppercase tracking-widest">Good to know</span><h2 class="text-3xl font-black text-earth-forest mt-2 mb-4">Bat work needs careful timing.</h2><p class="text-stone-700 leading-relaxed">Alabama Cooperative Extension advises that bat exclusion only occur outside the pupping season (April through August) so young bats are not separated from their mothers. The specific plan and timing should be confirmed for the property.</p><a class="inline-block mt-4 text-earth-clay font-bold underline underline-offset-4" href="https://www.aces.edu/blog/topics/forestry-wildlife/bat-management-for-alabama/" target="_blank" rel="noopener noreferrer">Read Alabama Extension’s bat guidance ↗</a></div>
+                <aside class="bg-white rounded-2xl p-7 border border-stone-300 shadow-sm"><h3 class="text-xl font-black text-earth-forest mb-3">A scope that stays focused</h3><p class="text-stone-700 leading-relaxed">Morrison’s Wildlife handles bats and squirrels. The company does not offer general pest control or trapping services for raccoons, armadillos, foxes, coyotes, or other animals.</p><a href="animals.html" class="inline-flex mt-5 text-earth-clay font-bold underline underline-offset-4">Learn about bats &amp; squirrels →</a></aside>
+            </div>
+        </section>
+
+        <section class="px-4 py-16 text-center">
+            <div class="max-w-4xl mx-auto"><span class="text-xs text-earth-clay font-black uppercase tracking-[0.22em]">Built around the property</span><h2 class="text-3xl font-black text-earth-forest mt-3">Every home has its own story.</h2><p class="text-stone-700 mt-3 max-w-2xl mx-auto">No set prices are listed because access, damage, and the right exclusion plan vary from house to house. Share what you’re noticing for a conversation about next steps.</p><a href="contact.html" class="inline-flex mt-6 bg-earth-clay hover:bg-earth-moss text-white font-extrabold px-7 py-3.5 rounded-lg transition">Request a call back</a></div>
+        </section>
+    </main>
+    <footer class="bg-[#101a15] text-stone-400 py-6 text-center text-sm"><a class="hover:text-sky-200" href="index.html">Morrison’s Wildlife, LLC</a> · Statewide Alabama service · <a class="text-sky-200" href="tel:+12053594716">205-359-4716</a></footer>
+</body>
+</html>
